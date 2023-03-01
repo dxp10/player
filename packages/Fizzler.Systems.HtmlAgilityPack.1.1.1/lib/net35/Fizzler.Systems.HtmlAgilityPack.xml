@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fizzler.Systems.HtmlAgilityPack</name>
+    </assembly>
+    <members>
+        <member name="T:Fizzler.Systems.HtmlAgilityPack.HtmlDocumentExtensions">
+            <summary>
+            Extensions methods for <see cref="T:HtmlAgilityPack.HtmlDocument"/>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlDocumentExtensions.LoadHtml2(HtmlAgilityPack.HtmlDocument,System.String)">
+            <summary>
+            Same as <see cref="M:HtmlAgilityPack.HtmlDocument.LoadHtml(System.String)" /> but without the FORM nesting
+            problem outlined in <a href="http://code.google.com/p/fizzler/issues/detail?id=24">issue #24</a>.
+            </summary>
+            <remarks>
+            This method is designed to be used by the Fizzler project tools 
+            exclusively and may be removed from a future version.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlDocumentExtensions.Load2(HtmlAgilityPack.HtmlDocument,System.String)">
+            <summary>
+            Same as <see cref="M:HtmlAgilityPack.HtmlDocument.Load(System.String)" /> but without the FORM nesting
+            problem outlined in <a href="http://code.google.com/p/fizzler/issues/detail?id=24">issue #24</a>.
+            </summary>
+            <remarks>
+            This method is designed to be used by the Fizzler project tools 
+            exclusively and may be removed from a future version.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlDocumentExtensions.LoadHtmlWithElementFlags(HtmlAgilityPack.HtmlDocument,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,HtmlAgilityPack.HtmlElementFlag}})">
+            <summary>
+            Parses the HTML and loads the document model using supplied
+            per-element handling options.
+            </summary>
+            <remarks>
+            The behavior of this method is not guaranteed to be thread-safe 
+            and is primarily a hack around <see cref="F:HtmlAgilityPack.HtmlNode.ElementsFlags"/> 
+            being static.
+            </remarks>
+            <remarks>
+            This method is designed to be used by the Fizzler project tools 
+            exclusively and may be removed from a future version.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlDocumentExtensions.LoadWithElementFlags(HtmlAgilityPack.HtmlDocument,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,HtmlAgilityPack.HtmlElementFlag}})">
+            <summary>
+            Parses the HTML and loads the document model using supplied
+            per-element handling options.
+            </summary>
+            <remarks>
+            The behavior of this method is not guaranteed to be thread-safe 
+            and is primarily a hack around <see cref="F:HtmlAgilityPack.HtmlNode.ElementsFlags"/> 
+            being static.
+            </remarks>
+            <remarks>
+            This method is designed to be used by the Fizzler project tools 
+            exclusively and may be removed from a future version.
+            </remarks>
+        </member>
+        <member name="T:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions">
+            <summary>
+            HtmlNode extension methods.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.IsElement(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Determines whether this node is an element or not.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.Elements(System.Collections.Generic.IEnumerable{HtmlAgilityPack.HtmlNode})">
+            <summary>
+            Returns a collection of elements from this collection.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.Children(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of child nodes of this node.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.Elements(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of child elements of this node.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.ElementsAfterSelf(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of the sibling elements after this node.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.NodesAfterSelf(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of the sibling nodes after this node.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.ElementsBeforeSelf(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of the sibling elements before this node.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.NodesBeforeSelf(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of the sibling nodes before this node.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.DescendantsAndSelf(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of nodes that contains this element 
+            followed by all descendant nodes of this element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.Descendants(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a collection of all descendant nodes of this element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeExtensions.GetBeginTagString(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Returns a begin tag, including attributes, string 
+            representation of this element.
+            </summary>
+        </member>
+        <member name="T:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps">
+            <summary>
+            An <see cref="T:Fizzler.IElementOps`1"/> implementation for <see cref="T:HtmlAgilityPack.HtmlNode"/>
+            from <a href="http://www.codeplex.com/htmlagilitypack">HtmlAgilityPack</a>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Type(Fizzler.NamespacePrefix,System.String)">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#type-selectors">type selector</a>,
+            which represents an instance of the element type in the document tree. 
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Universal(Fizzler.NamespacePrefix)">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#universal-selector">universal selector</a>,
+            any single element in the document tree in any namespace 
+            (including those without a namespace) if no default namespace 
+            has been specified for selectors. 
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Id(System.String)">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#Id-selectors">ID selector</a>,
+            which represents an element instance that has an identifier that 
+            matches the identifier in the ID selector.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Class(System.String)">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#class-html">class selector</a>,
+            which is an alternative <see cref="M:Fizzler.IElementOps`1.AttributeIncludes(Fizzler.NamespacePrefix,System.String,System.String)"/> when 
+            representing the <c>class</c> attribute. 
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributeExists(Fizzler.NamespacePrefix,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the given attribute <paramref name="name"/>
+            whatever the values of the attribute.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributeExact(Fizzler.NamespacePrefix,System.String,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the given attribute <paramref name="name"/>
+            and whose value is exactly <paramref name="value"/>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributeIncludes(Fizzler.NamespacePrefix,System.String,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the given attribute <paramref name="name"/>
+            and whose value is a whitespace-separated list of words, one of 
+            which is exactly <paramref name="value"/>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributeDashMatch(Fizzler.NamespacePrefix,System.String,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the given attribute <paramref name="name"/>,
+            its value either being exactly <paramref name="value"/> or beginning 
+            with <paramref name="value"/> immediately followed by "-" (U+002D).
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributePrefixMatch(Fizzler.NamespacePrefix,System.String,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the attribute <paramref name="name"/> 
+            whose value begins with the prefix <paramref name="value"/>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributeSuffixMatch(Fizzler.NamespacePrefix,System.String,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the attribute <paramref name="name"/> 
+            whose value ends with the suffix <paramref name="value"/>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.AttributeSubstring(Fizzler.NamespacePrefix,System.String,System.String)">
+            <summary>
+            Generates an <a href="http://www.w3.org/TR/css3-selectors/#attribute-selectors">attribute selector</a>
+            that represents an element with the attribute <paramref name="name"/> 
+            whose value contains at least one instance of the substring <paramref name="value"/>.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.FirstChild">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#pseudo-classes">pseudo-class selector</a>,
+            which represents an element that is the first child of some other element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.LastChild">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#pseudo-classes">pseudo-class selector</a>,
+            which represents an element that is the last child of some other element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.NthChild(System.Int32,System.Int32)">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#pseudo-classes">pseudo-class selector</a>,
+            which represents an element that is the N-th child of some other element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.OnlyChild">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#pseudo-classes">pseudo-class selector</a>,
+            which represents an element that has a parent element and whose parent 
+            element has no other element children.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Empty">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#pseudo-classes">pseudo-class selector</a>,
+            which represents an element that has no children at all.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Child">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#combinators">combinator</a>,
+            which represents a childhood relationship between two elements.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Descendant">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#combinators">combinator</a>,
+            which represents a relationship between two elements where one element is an 
+            arbitrary descendant of some ancestor element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.Adjacent">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#combinators">combinator</a>,
+            which represents elements that share the same parent in the document tree and 
+            where the first element immediately precedes the second element.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.GeneralSibling">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#combinators">combinator</a>,
+            which separates two sequences of simple selectors. The elements represented
+            by the two sequences share the same parent in the document tree and the
+            element represented by the first sequence precedes (not necessarily
+            immediately) the element represented by the second one.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeOps.NthLastChild(System.Int32,System.Int32)">
+            <summary>
+            Generates a <a href="http://www.w3.org/TR/css3-selectors/#pseudo-classes">pseudo-class selector</a>,
+            which represents an element that is the N-th child from bottom up of some other element.
+            </summary>
+        </member>
+        <member name="T:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection">
+            <summary>
+            Selector API for <see cref="T:HtmlAgilityPack.HtmlNode"/>.
+            </summary>
+            <remarks>
+            For more information, see <a href="http://www.w3.org/TR/selectors-api/">Selectors API</a>.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.QuerySelector(HtmlAgilityPack.HtmlNode,System.String)">
+            <summary>
+            Similar to <see cref="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.QuerySelectorAll(HtmlAgilityPack.HtmlNode,System.String)" /> 
+            except it returns only the first element matching the supplied 
+            selector strings.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.QuerySelectorAll(HtmlAgilityPack.HtmlNode,System.String)">
+            <summary>
+            Retrieves all element nodes from descendants of the starting 
+            element node that match any selector within the supplied 
+            selector strings. 
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.QuerySelectorAll(HtmlAgilityPack.HtmlNode,System.String,System.Func{System.String,System.Func{HtmlAgilityPack.HtmlNode,System.Collections.Generic.IEnumerable{HtmlAgilityPack.HtmlNode}}})">
+            <summary>
+            Retrieves all element nodes from descendants of the starting 
+            element node that match any selector within the supplied 
+            selector strings. An additional parameter specifies a 
+            particular compiler to use for parsing and compiling the 
+            selector.
+            </summary>
+            <remarks>
+            The <paramref name="compiler"/> can be <c>null</c>, in which
+            case a default compiler is used. If the selector is to be used
+            often, it is recommended to use a caching compiler such as the
+            one supplied by <see cref="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.CreateCachingCompiler"/>.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.Compile(System.String)">
+            <summary>
+            Parses and compiles CSS selector text into run-time function.
+            </summary>
+            <remarks>
+            Use this method to compile and reuse frequently used CSS selectors
+            without parsing them each time.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.CachableCompile(System.String)">
+            <summary>
+            Compiles a selector. If the selector has been previously 
+            compiled then this method returns it rather than parsing
+            and compiling the selector on each invocation.
+            </summary>
+            <remarks>
+            The cache is per-thread and therefore thread-safe without
+            lock contention.
+            </remarks>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.CreateCachingCompiler">
+            <summary>
+            Creates a caching selector compiler that uses a default
+            cache strategy when the selector text is regarded as being
+            orginally case-insensitive.
+            </summary>
+        </member>
+        <member name="M:Fizzler.Systems.HtmlAgilityPack.HtmlNodeSelection.CreateCachingCompiler(System.Collections.Generic.IDictionary{System.String,System.Func{HtmlAgilityPack.HtmlNode,System.Collections.Generic.IEnumerable{HtmlAgilityPack.HtmlNode}}})">
+            <summary>
+            Creates a caching selector compiler where the compiled selectors
+            are maintained in a user-supplied <see cref="T:System.Collections.Generic.IDictionary`2"/>
+            instance.
+            </summary>
+            <remarks>
+            If <paramref name="cache"/> is <c>null</c> then this method uses a
+            the <see cref="T:System.Collections.Generic.Dictionary`2"/> implementation with an 
+            ordinally case-insensitive selectors text comparer.
+            </remarks>
+        </member>
+    </members>
+</doc>
