@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Albums" xml:space="preserve">
+    <value>Альбом</value>
+  </data>
+  <data name="Artists" xml:space="preserve">
+    <value>Виконавці</value>
+  </data>
+  <data name="btnAbout" xml:space="preserve">
+    <value>Про мене </value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Закрити</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="btnLanguge" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="btnMyMusic" xml:space="preserve">
+    <value>Музика</value>
+  </data>
+  <data name="btnNewPlaylist" xml:space="preserve">
+    <value>Плейлист</value>
+  </data>
+  <data name="btnNewPlaylist1" xml:space="preserve">
+    <value>Плеслист1</value>
+  </data>
+  <data name="btnNowPlaying" xml:space="preserve">
+    <value>Зараз грає</value>
+  </data>
+  <data name="btnPlayAll" xml:space="preserve">
+    <value>Включити все</value>
+  </data>
+  <data name="btnPlayList" xml:space="preserve">
+    <value>Плейлист</value>
+  </data>
+  <data name="btnRecentPlays" xml:space="preserve">
+    <value>Історія відтворення</value>
+  </data>
+  <data name="btnRename" xml:space="preserve">
+    <value>Змінити назву</value>
+  </data>
+  <data name="btnRenamePlaylist" xml:space="preserve">
+    <value>Змінити назву плейлиста</value>
+  </data>
+  <data name="btnSetting" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="btnShuffleAllAlbums" xml:space="preserve">
+    <value>Випадковий</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Англійська</value>
+  </data>
+  <data name="label1" xml:space="preserve">
+    <value>Назва пісні:</value>
+  </data>
+  <data name="label1_Add" xml:space="preserve">
+    <value>Ми використовуємо ці каталоги.</value>
+  </data>
+  <data name="label2" xml:space="preserve">
+    <value>Ім'я виконавця:</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>Назва альбому:</value>
+  </data>
+  <data name="label4" xml:space="preserve">
+    <value>Виконавець альбому:</value>
+  </data>
+  <data name="label5" xml:space="preserve">
+    <value>Категорія:</value>
+  </data>
+  <data name="label6" xml:space="preserve">
+    <value>Час:</value>
+  </data>
+  <data name="label7" xml:space="preserve">
+    <value>Рік:</value>
+  </data>
+  <data name="label8" xml:space="preserve">
+    <value>Ліцензія:</value>
+  </data>
+  <data name="label9" xml:space="preserve">
+    <value>Шлях:</value>
+  </data>
+  <data name="labelSort" xml:space="preserve">
+    <value>Відсортовано за:</value>
+  </data>
+  <data name="labelTitle" xml:space="preserve">
+    <value>Моя музика</value>
+  </data>
+  <data name="label_About" xml:space="preserve">
+    <value>Всі права.</value>
+  </data>
+  <data name="label_Add" xml:space="preserve">
+    <value>Збирайте свої колекції тут</value>
+  </data>
+  <data name="label_Contact" xml:space="preserve">
+    <value>Підтримка:</value>
+  </data>
+  <data name="lblSongName" xml:space="preserve">
+    <value>Інформація</value>
+  </data>
+  <data name="lblSongSearch" xml:space="preserve">
+    <value>Результати для "</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>Хвилина</value>
+  </data>
+  <data name="settingLocal" xml:space="preserve">
+    <value>Папка для відтворення музики</value>
+  </data>
+  <data name="shutdown" xml:space="preserve">
+    <value>Час вийшов</value>
+  </data>
+  <data name="Songs" xml:space="preserve">
+    <value>Пісня</value>
+  </data>
+  <data name="txbNewPlaylist" xml:space="preserve">
+    <value>Назва списку відтворення</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Перевірити наявність оновлень</value>
+  </data>
+  <data name="Vietnam" xml:space="preserve">
+    <value>Українська</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Не</value>
+  </data>
+  <data name="lblStatusOff" xml:space="preserve">
+    <value>Вимкнути</value>
+  </data>
+  <data name="lblStatusOn" xml:space="preserve">
+    <value>ВІДЧИНЕНО</value>
+  </data>
+  <data name="lblWarning" xml:space="preserve">
+    <value>* Зміни буде застосовано під час наступного відкриття програми.</value>
+  </data>
+  <data name="lbStatus" xml:space="preserve">
+    <value>Статус:</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>Версія:</value>
+  </data>
+  <data name="btnDone" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="captionDelete" xml:space="preserve">
+    <value>Ви хочете видалити?</value>
+  </data>
+  <data name="deleteFolder" xml:space="preserve">
+    <value>Якщо видалити папку «Музика», вона більше не відображатиметься. Але ви можете скасувати цю операцію.</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <data name="lbupdate1" xml:space="preserve">
+    <value>Перевірити поточну версію</value>
+  </data>
+  <data name="lbupdate2" xml:space="preserve">
+    <value>Завантаження оновлення...</value>
+  </data>
+  <data name="lbupdate3" xml:space="preserve">
+    <value>Оновлення буде застосовано після повторного відкриття Ting Music.</value>
+  </data>
+  <data name="lbupdate4" xml:space="preserve">
+    <value>Немає нових оновлень</value>
+  </data>
+  <data name="noInternet" xml:space="preserve">
+    <value>Немає підключення до мережі.</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Пошук пісні</value>
+  </data>
+  <data name="Add to" xml:space="preserve">
+    <value>Додати</value>
+  </data>
+  <data name="Edit info" xml:space="preserve">
+    <value>Редагувати інформацію</value>
+  </data>
+  <data name="edit1" xml:space="preserve">
+    <value>Виправлення успішне</value>
+  </data>
+  <data name="edit2" xml:space="preserve">
+    <value>Сповіщення</value>
+  </data>
+  <data name="editerror" xml:space="preserve">
+    <value>Помилка виправлення. Ви повинні зіграти іншу пісню і повторити.</value>
+  </data>
+  <data name="lblInfo" xml:space="preserve">
+    <value>Редагувати інформацію</value>
+  </data>
+  <data name="play" xml:space="preserve">
+    <value>Грати</value>
+  </data>
+  <data name="playNext" xml:space="preserve">
+    <value>Наступна стаття</value>
+  </data>
+  <data name="Properites" xml:space="preserve">
+    <value>Інформація</value>
+  </data>
+  <data name="question1" xml:space="preserve">
+    <value>Ви хочете відредагувати інформацію.</value>
+  </data>
+  <data name="question2" xml:space="preserve">
+    <value>Запитуйте</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+</root>
